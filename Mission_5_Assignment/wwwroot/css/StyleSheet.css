@@ -1,0 +1,200 @@
+﻿/* Main Page Styling */
+.main-page {
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Add spacing around content */
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+/* Center Title Styling */
+.page-container h1 {
+    text-align: center; /* Center the title */
+    font-size: 2.5rem; /* Adjust size for emphasis */
+    margin-bottom: 20px; /* Add space below the title */
+    color: #333; /* Optional: Set a darker color */
+}
+
+
+/* General Image Styling */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure no inline spacing affects layout */
+    margin: 0 auto; /* Center the images */
+    border-radius: 8px; /* Optional: Round corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+/* Page-Specific Styling for Images */
+.page-container img {
+    width: 100%; /* Ensure the image fills the container */
+    max-width: 800px; /* Prevent overly large images */
+    height: auto;
+    margin: 20px auto; /* Add spacing around the images */
+}
+
+
+/* Paragraph Styling */
+.main-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Adjust navbar height */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Adjust text color */
+    text-decoration: none;
+}
+
+/* Remove background from the logo image */
+.navbar img {
+    background-color: transparent; /* Ensure no background color is applied */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove shadow if applied */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Ensure it aligns properly */
+}
+
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+    .navbar-nav .nav-item {
+        margin-right: 20px; /* Space between navigation links */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff; /* Change link color on hover */
+        }
+
+/* Center-align footer content */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Add spacing above the footer if needed */
+}
+
+    footer a {
+        color: #000; /* Optional: Customize link color */
+        text-decoration: none; /* Optional: Remove underline */
+        transition: color 0.2s ease-in-out;
+    }
+
+        footer a:hover {
+            color: #007bff; /* Optional: Change color on hover */
+        }
+
+/* Calculator Page */
+
+/* General Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Title Styling */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+/* Readonly Input Styling */
+input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button Styling */
+.calculate-button, .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .calculate-button:hover, .back-button:hover {
+        background-color: #0056b3;
+    }
+
+/* Back Button Specific Styling */
+.back-button {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
