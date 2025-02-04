@@ -3,38 +3,38 @@
     ViewData["Title"] = "Calculator";
 }
 
-<!-- Main Container for the Calculator -->
-<div class="container">
+<div class="calculator-container">
     <!-- Page Title -->
     <h1 class="page-title">Calculate Your Tutoring Cost</h1>
 
     <!-- Input for Hours -->
     <div class="input-group">
-        <label for="hoursInput">Enter the number of hours you need:</label> <!-- Label for the hours input field -->
-        <input type="number" id="hoursInput" placeholder="Enter hours" min="0"> <!-- Input field for entering hours (minimum value is 0) -->
-        <small id="hoursError" class="error-message hidden">Please enter a positive number.</small> <!-- Error message shown if input is invalid -->
+        <label for="hoursInput">Enter the number of hours you need:</label> 
+        <input type="number" id="hoursInput" placeholder="Enter hours" min="0" />
+        <small id="hoursError" class="error-message hidden">Please enter a positive number.</small> 
     </div>
 
     <!-- Hourly Rate -->
     <div class="input-group">
-        <label for="rateInput">Hourly Rate:</label> <!-- Label for the hourly rate field -->
-        <input type="text" id="rateInput" value="30" readonly> <!-- Non-editable field displaying the hourly rate -->
+        <label for="rateInput">Hourly Rate:</label> 
+        <input type="text" id="rateInput" value="30" readonly />
     </div>
 
     <!-- Button to Calculate -->
     <div class="input-group">
-        <button id="calculateButton" class="calculate-button">Calculate Total</button> <!-- Button to trigger the cost calculation -->
+        <button id="calculateButton" class="calculate-button">Calculate Total</button> 
     </div>
 
     <!-- Output for Total Cost -->
     <div class="input-group">
-        <label for="totalOutput">Total Cost:</label> <!-- Label for the total cost field -->
-        <input type="text" id="totalOutput" readonly> <!-- Non-editable field displaying the calculated total cost -->
+        <label for="totalOutput">Total Cost:</label> 
+        <input type="text" id="totalOutput" readonly />
     </div>
 
-    <!-- Link to Go Back to Home Page -->
-    <a href="/" class="back-button">Back to Home</a> <!-- Navigation link to return to the home page -->
+    <!-- Navigation Link to Home -->
+    <a href="/" class="back-button">Back to Home</a> 
 </div>
 
-<!-- Script Section -->
-<script src="~/js/site.js"></script> <!-- Links the site-wide JavaScript file -->
+
+<!-- JavaScript -->
+<script src="~/js/site.js"></script>

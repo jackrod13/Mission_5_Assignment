@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <!-- Metadata and Character Encoding -->
-    <meta charset="utf-8" /> <!-- Defines the character encoding as UTF-8 for compatibility -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsiveness on different devices -->
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <!-- Page Title -->
     <title>@ViewData["Title"] - Fly Fishing</title> <!-- Dynamically sets the page title using ViewData -->
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/lib/flyfishing.png"> <!-- Specifies the favicon for the website -->
+    <link rel="icon" type="image/png" href="/lib/flyfishing.png"> 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> <!-- Includes Bootstrap CSS for responsive design -->
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> <!-- Links the site-wide custom stylesheet -->
-    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" /> <!-- Custom stylesheet for additional styles -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> 
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" /> 
 </head>
 
 <body>
@@ -22,14 +22,14 @@
 
                 <!-- Logo and Title -->
                 <div class="d-flex align-items-center">
-                    <h1 class="navbar-brand mb-0" style="font-size: 1.5rem;">Fly Fishing</h1> <!-- Website title -->
-                    <img src="/lib/flyfishing.png" alt="Fly Fishing Logo" style="height: 40px; margin-left: 10px;"> <!-- Logo image -->
+                    <h1 class="navbar-brand mb-0" style="font-size: 1.5rem;">Fly Fishing</h1> 
+                    <img src="/lib/flyfishing.png" alt="Fly Fishing Logo" style="height: 40px; margin-left: 10px;"> 
                 </div>
 
                 <!-- Navigation Links -->
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> <!-- Link to the home page -->
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Calculator">Calculator</a> <!-- Link to the calculator page -->
@@ -42,7 +42,7 @@
     <!-- Main Content Section -->
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody() <!-- Placeholder for page-specific content -->
+            @RenderBody() 
         </main>
     </div>
 
@@ -55,11 +55,11 @@
     </footer>
 
     <!-- JavaScript Files -->
-    <script src="~/lib/calculator.js"></script> <!-- Custom JavaScript for the calculator functionality -->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script> <!-- Includes jQuery library -->
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- Includes Bootstrap JavaScript for responsive components -->
-    <script src="~/js/site.js" asp-append-version="true"></script> <!-- Custom JavaScript for site-wide functionality -->
+    <script src="~/lib/calculator.js"></script> 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script> 
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="~/js/site.js" asp-append-version="true"></script> 
     <!-- Additional Scripts Section -->
-    @await RenderSectionAsync("Scripts", required: false) <!-- Placeholder for page-specific scripts -->
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

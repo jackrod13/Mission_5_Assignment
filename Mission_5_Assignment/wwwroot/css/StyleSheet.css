@@ -1,38 +1,36 @@
 ﻿/* Main Page Styling */
 .main-page {
-    margin: 0 auto; /* Center content horizontally */
-    padding: 20px; /* Add spacing around content */
-    text-align: center; /* Center-align text */
-    font-family: Arial, sans-serif; /* Use a clean font */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 /* Center Title Styling */
 .page-container h1 {
-    text-align: center; /* Center the title */
-    font-size: 2.5rem; /* Adjust size for emphasis */
-    margin-bottom: 20px; /* Add space below the title */
-    color: #333; /* Optional: Set a darker color */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
-
 
 /* General Image Styling */
 img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure no inline spacing affects layout */
-    margin: 0 auto; /* Center the images */
-    border-radius: 8px; /* Optional: Round corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Page-Specific Styling for Images */
 .page-container img {
-    width: 100%; /* Ensure the image fills the container */
-    max-width: 800px; /* Prevent overly large images */
+    width: 100%;
+    max-width: 800px;
     height: auto;
-    margin: 20px auto; /* Add spacing around the images */
+    margin: 20px auto;
 }
-
 
 /* Paragraph Styling */
 .main-page p {
@@ -42,15 +40,12 @@ img {
     margin: 10px 0;
 }
 
-
-
-
 /* Navbar Styles */
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    height: 60px; /* Adjust navbar height */
+    height: 60px;
 }
 
 .navbar-brand {
@@ -58,20 +53,19 @@ img {
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000; /* Adjust text color */
+    color: #000;
     text-decoration: none;
 }
 
 /* Remove background from the logo image */
 .navbar img {
-    background-color: transparent; /* Ensure no background color is applied */
-    border: none; /* Remove any border */
-    box-shadow: none; /* Remove shadow if applied */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: inline-block; /* Ensure it aligns properly */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
 }
-
 
 .navbar-nav {
     margin: 0;
@@ -82,7 +76,7 @@ img {
 }
 
     .navbar-nav .nav-item {
-        margin-right: 20px; /* Space between navigation links */
+        margin-right: 20px;
     }
 
     .navbar-nav .nav-link {
@@ -93,36 +87,37 @@ img {
     }
 
         .navbar-nav .nav-link:hover {
-            color: #007bff; /* Change link color on hover */
+            color: #007bff;
         }
 
 /* Center-align footer content */
 footer {
     text-align: center;
-    margin-top: 20px; /* Add spacing above the footer if needed */
+    margin-top: 20px;
 }
 
     footer a {
-        color: #000; /* Optional: Customize link color */
-        text-decoration: none; /* Optional: Remove underline */
+        color: #000;
+        text-decoration: none;
         transition: color 0.2s ease-in-out;
     }
 
         footer a:hover {
-            color: #007bff; /* Optional: Change color on hover */
+            color: #007bff;
         }
 
 /* Calculator Page */
 
 /* General Container Styling */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Ensures the container doesn't stretch too wide */
+    margin: 50px auto; /* Centers the container */
+    padding: 20px; /* Adds spacing inside the container */
+    border: 1px solid #ddd; /* Light border for definition */
+    border-radius: 8px; /* Rounds the corners */
+    background-color: #ffffff; /* Sets a white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    text-align: left; /* Aligns content inside the container to the left */
 }
 
 /* Page Title Styling */
@@ -186,6 +181,7 @@ input[readonly] {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    width: 100%; /* Makes buttons span full width */
 }
 
     .calculate-button:hover, .back-button:hover {
@@ -197,4 +193,10 @@ input[readonly] {
     margin-top: 20px;
     display: block;
     text-align: center;
+}
+
+/* Improve overall spacing and alignment */
+.input-group input, .input-group label {
+    margin: 0 auto;
+    display: block;
 }
